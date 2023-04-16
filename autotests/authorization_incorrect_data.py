@@ -2,8 +2,8 @@ import ast
 import pickle
 import time
 import pytest
-from pages.auth import *
-from pages.settings import *
+from conf.auth import *
+from conf.settings import *
 
 @pytest.mark.auth
 @pytest.mark.negative
