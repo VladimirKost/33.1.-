@@ -1,4 +1,4 @@
-from pages.Api_RegMail import RegEmail
+from conf.Api import RegEmail
 from pages.auth import *
 from selenium.webdriver.common.by import By
 from pages.settings import valid_phone, valid_login, valid_password, \
