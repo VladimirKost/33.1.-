@@ -1,7 +1,7 @@
-from pages.Api_RegMail import RegEmail
-from pages.auth import *
+from conf.API import RegEmail
+from conf.auth import *
 from selenium.webdriver.common.by import By
-from pages.settings import *
+from conf.settings import *
 import time
 import pytest
 from selenium.webdriver.common.keys import Keys
