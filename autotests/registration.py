@@ -1,7 +1,7 @@
 from conf.Api import RegEmail
-from pages.auth import *
+from conf.auth import *
 from selenium.webdriver.common.by import By
-from pages.settings import valid_phone, valid_login, valid_password, \
+from conf.settings import valid_phone, valid_login, valid_password, \
     fake_firstname, fake_lastname, fake_password
 import time
 import pytest
