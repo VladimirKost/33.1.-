@@ -1,8 +1,8 @@
 import pickle
 import pytest
-from pages.auth import *
+from conf.auth import *
 from selenium.webdriver.common.by import By
-from pages.settings import valid_phone, valid_login, valid_password, \
+from conf.settings import valid_phone, valid_login, valid_password, \
     invalid_ls, valid_email, valid_pass_reg, fake_email
 @pytest.mark.auth
 @pytest.mark.positive
