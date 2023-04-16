@@ -4,8 +4,6 @@ from selenium.webdriver.common.by import By
 from pages.settings import *
 import time
 import pytest
-
-
 @pytest.mark.reg
 @pytest.mark.negatvie
 @pytest.mark.parametrize('firstname', ['', generate_string_rus(1), generate_string_rus(31),
@@ -45,7 +43,6 @@ def test_get_registration_invalid_format_firstname(browser, firstname):
 
     assert error_mess.text == 'Необходимо заполнить поле кириллицей. От 2 до 30 символов.'
 
-
 @pytest.mark.reg
 @pytest.mark.negatvie
 @pytest.mark.parametrize('lastname', ['', generate_string_rus(1), generate_string_rus(31),
@@ -84,7 +81,6 @@ def test_get_registration_invalid_format_lastname(browser, lastname):
     error_mess = browser.find_element(*AuthLocators.AUTH_MESS_ERROR)
     assert error_mess.text == 'Необходимо заполнить поле кириллицей. От 2 до 30 символов.'
 
-
 @pytest.mark.reg
 @pytest.mark.negatvie
 @pytest.mark.parametrize('phone', ['', 1, 7111111111, generate_string_rus(11), special_chars()],
@@ -120,7 +116,6 @@ def test_get_registration_invalid_format_phone(browser, phone):
     error_mess = browser.find_element(*AuthLocators.AUTH_MESS_ERROR)
     assert error_mess.text == 'Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, ' \
                               'или email в формате example@email.ru'
-
 
 @pytest.mark.reg
 @pytest.mark.negatvie
