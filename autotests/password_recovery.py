@@ -1,4 +1,4 @@
-from conf.Api import RegEmail
+from conf.API import RegEmail
 from conf.auth import *
 from selenium.webdriver.common.by import By
 from conf.settings import *
